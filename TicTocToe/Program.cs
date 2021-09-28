@@ -12,7 +12,8 @@ namespace TicTocToe
         {
             Console.WriteLine("Welcome to TicTocToe");
             TicTocToe ticToc = new TicTocToe();
-            ticToc.CreatingBoard();
+            ticToc.PlayerInput();
+            Console.ReadLine();
         }
     }
 }

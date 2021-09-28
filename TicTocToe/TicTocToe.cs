@@ -11,11 +11,30 @@ namespace TicTocToe
         public char[] CreatingBoard()
         {
             char[] array = new char[10];
-            for (int i = 1; i == array.Length; i++)
+            for ( int i = 1; i < array.Length; i++)
             {
                 array[i] = ' ';
             }
             return array;
+        }
+
+        public char PlayerInput()
+        {
+            Console.WriteLine("Enter the character either X or O");
+            char user = Convert.ToChar(Console.ReadLine());
+            return user;
+        }
+
+        public char ComputerReturnLetter(char user)
+        {
+            char computerReturn;
+            if (user == 'X')
+                computerReturn = 'O';
+            else
+            {
+                computerReturn = 'X';
+            }
+            return computerReturn;
         }
     }
 }
