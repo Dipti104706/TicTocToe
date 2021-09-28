@@ -28,12 +28,17 @@ namespace TicTocToe
         {
             char computerReturn;
             if (user == 'X')
+            {
                 computerReturn = 'O';
+                Console.WriteLine("computer:", +computerReturn);
+            }
             else
             {
                 computerReturn = 'X';
+                Console.WriteLine("computer:", +computerReturn);
             }
             return computerReturn;
         }
+        
     }
 }
