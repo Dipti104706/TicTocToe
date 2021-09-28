@@ -8,14 +8,15 @@ namespace TicTocToe
 {
     class TicTocToe
     {
-        public char[] CreatingBoard()
+        public void CreatingBoard()
         {
             char[] array = new char[10];
-            for (int i = 1; i == array.Length; i++)
+            int i;
+            for ( i = 1; i == array.Length; i++)
             {
                 array[i] = ' ';
             }
-            return array;
+            Console.WriteLine("Array is", +array[i]);
         }
     }
 }
